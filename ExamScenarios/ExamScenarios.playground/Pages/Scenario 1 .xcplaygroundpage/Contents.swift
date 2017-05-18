@@ -22,8 +22,16 @@ import PlaygroundSupport
 //: ## Your code starts here
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
+//setting canvas color
+canvas.fillColor = Color(hue: 25, saturation: 87, brightness: 96, alpha: 100)
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
+//rotating canvas
+canvas.translate(byX: 200, byY: 300)
+canvas.rotate(by: 45)
+canvas.drawAxes()
 
-
+canvas.fillColor = Color.black
+canvas.drawRectangle(centreX: 250, centreY: 60, width: 100, height: 100)
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
