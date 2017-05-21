@@ -30,7 +30,6 @@ canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 //rotating canvas
 canvas.translate(byX: 200, byY: 300)
 canvas.rotate(by: 45)
-canvas.drawAxes()
 
 var h = 0
 var s = 0
@@ -43,21 +42,36 @@ for y in stride(from: 60, to: -300, by: -99){
         canvas.fillColor = Color(hue: h, saturation: s, brightness: b, alpha: 100)
         canvas.drawRectangle(centreX: x, centreY: y, width: 100, height: 100)
         
-        if c == 1 || c == 4  || c == 10{
+        if c == 1 || c == 4 || c == 11{
             h = 21
             s = 89
             b = 22
-        } else if c == 2 || c == 5 || c == 7 || c == 10 || c == 8{
+        } else if c == 2 || c == 5 || c == 7 || c == 8 || c == 10{
             s = 90
             b = 47
         } else if c == 3 || c == 6 || c == 9 {
             s = 90
             b = 70
+        } else if c == 15 {
+            h = 0
+            s = 0
+            b = 0
         }
         c += 1
         
     }
 }
+canvas.drawText(message: "dead kennedys", size: 40, x: -100, y: 110)
+canvas.textColor = Color.white
+//text
+canvas.drawText(message: "with arizona's", size: 10, x: -85, y: 85)
+canvas.drawText(message: "the feederz plus", size: 10, x: -85, y: 74)
+canvas.drawText(message: "l.a.'s black flag", size: 10, x: -85, y: 63)
+//second square
+canvas.drawText(message: "wednesday", size: 10, x: 10, y: 85)
+canvas.drawText(message: "october 10 1979", size: 10, x: 10, y: 74)
+canvas.drawText(message: "admission $2", size: 10, x: 10, y: 63)
+
 
 
 
