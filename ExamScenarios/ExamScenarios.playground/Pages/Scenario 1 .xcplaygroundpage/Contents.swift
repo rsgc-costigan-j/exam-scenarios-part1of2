@@ -71,6 +71,11 @@ canvas.drawText(message: "l.a.'s black flag", size: 10, x: -85, y: 63)
 canvas.drawText(message: "wednesday", size: 10, x: 10, y: 85)
 canvas.drawText(message: "october 10 1979", size: 10, x: 10, y: 74)
 canvas.drawText(message: "admission $2", size: 10, x: 10, y: 63)
+//third square
+canvas.drawText(message: "with arizona's", size: 10, x: 110, y: 85)
+canvas.drawText(message: "the feederz plus", size: 10, x: 110, y: 74)
+canvas.drawText(message: "l.a.'s black flag", size: 10, x: 110, y: 63)
+
 
 
 
